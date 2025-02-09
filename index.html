@@ -45,7 +45,7 @@
                   <strong>Honors and Awards:</strong>
                   <br>[2024.07] RSS 2024<font color="red"><strong> Best Paper Award Finalists</strong></font>.
                   <br>[2022.06] Outstanding Graduates of Tsinghua (Top 10%).
-                  <br>[2017.11] 34th Chinese Physics Olympiad (CPhO), Silver Metal.
+                  <br>[2017.11] 34th Chinese Physics Olympiad (CPhO), Silver Medal.
 
                 </p>
 
@@ -83,13 +83,53 @@
               <td style="padding:10px;width:100%;vertical-align:top">
                 <h2>Selected Publications</h2>
                 <p>
-                Papers related to robot foundation model training are <span class="highlight">highlighted</span>.
+                Papers related to robotic foundation model training are <span class="highlight">highlighted</span>.
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+              <td style="padding:10px;width:35%;vertical-align:top">
+                <div class="one" style="width: 100%;">
+                  <div class="two" id='nuvo_image' style="width: 100%;"><video  width=100% muted autoplay loop>
+                  <source src="images/upvla.jpg">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <!-- <video src='images/doremi_clip.mp4' type="video/mp4" width=100%></video> -->
+                  <img src='images/upvla.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function nuvo_start() {
+                    document.getElementById('nuvo_image').style.opacity = "1";
+                  }
+        
+                  function nuvo_stop() {
+                    document.getElementById('nuvo_image').style.opacity = "0";
+                  }
+                  nuvo_stop()
+                </script>
+              </td>
+              <td style="padding:10px;width:65%;vertical-align:top">
+                <a href="https://arxiv.org/abs/2501.18867">
+                  <span class="papertitle">UP-VLA: A Unified Understanding and Prediction Model for Embodied Agent</span>
+                </a>
+                <br>
+                Jianke Zhang*, <strong>Yanjiang Guo*</strong>, Yucheng Hu*, Xiaoyu Chen, Jianyu Chen
+        
+                <br>
+                <strong><em>Arxiv</em>, 2025</strong>
+                <br>
+                <a href="https://arxiv.org/abs/2501.18867">arXiv</a>
+
+                <p></p>
+                <p>
+                  <span class="highlight">We incoperate both multi-modal understanding (MMU) and future prediction into VLA model, enhancing both high-level semantic knowledge and low-level visual dynamics.</span>
+                  
+                </p>
+              </td>
+            </tr>
 
     <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
       <td style="padding:10px;width:35%;vertical-align:top">
@@ -162,7 +202,7 @@
         </script>
       </td>
       <td style="padding:10px;width:65%;vertical-align:top">
-        <a href="https://sites.google.com/view/pad-paper">
+        <a href="https://arxiv.org/abs/2501.16664">
           <span class="papertitle">Improving Vision-Language-Action Model with Online Reinforcement Learning</span>
         </a>
         <br>
@@ -172,10 +212,12 @@
         <br>
         <a href="https://arxiv.org/abs/2501.16664">arXiv</a>
         /
-        <a href="https://x.com/RoboReading/status/1884473082053599459">twitter</a>
+        <a href="https://x.com/RoboReading/status/1884473082053599459">twitter1</a>
+        /
+        <a href="https://x.com/chris_j_paxton/status/1887525625042248018">twitter2</a>
         <p></p>
         <p>
-          <span class="highlight">We make some initial exploration on leveraging online RL to improve the VLA model.</span>
+          <span class="highlight">We make some initial exploration on leveraging online RL to improve the VLA model! We notice that online RL for VLA can be extremely unstable and thus we adopted a iterative approach.</span>
           
         </p>
       </td>

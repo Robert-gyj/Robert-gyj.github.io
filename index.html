@@ -22,14 +22,15 @@
                 <p class="name" style="text-align: center;">
                   Yanjiang Guo
                 </p>
-                <p> Hi! I am a 4th-year CS PhD student at <a href="https://iiis.tsinghua.edu.cn/"> Tsinghua University</a>, advised by Prof. <a href="https://people.iiis.tsinghua.edu.cn/~jychen/">Jianyu Chen</a>.
+                <p> Hi! I am a 4th-year PhD student in Computer Science at <a href="https://iiis.tsinghua.edu.cn/"> Tsinghua University</a>, advised by Prof. <a href="https://people.iiis.tsinghua.edu.cn/~jychen/">Jianyu Chen</a>.
                 Previously, I received my bachelor's degree in EE also from<a href="https://www.ee.tsinghua.edu.cn/"> Tsinghua University</a> in 2022.
+                From March 2025 to Jan. 2026, I was fortunate to visit <a href="https://irislab.stanford.edu/">Stanford University</a> and work with Prof. <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a> (Founder of <a href="https://www.physicalintelligence.company/">Physical Intelligence</a>).
                 <!-- <p> -->
-                Currently, I am a visiting researcher at <a href="https://irislab.stanford.edu/">Stanford University</a> and fortunate to work with Prof. <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a> (Founder of <a href="https://www.physicalintelligence.company/">Physical Intelligence</a>).
+                <!-- Currently, I am a visiting researcher at <a href="https://irislab.stanford.edu/">Stanford University</a> and fortunate to work with Prof. <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a> (Founder of <a href="https://www.physicalintelligence.company/">Physical Intelligence</a>). -->
                 <!-- </p> -->
 
                 <p> 
-                My research focuses on <strong>training embodied foundation models</strong> that can perform a wide range of tasks in the physical world. I believe that building on top of pretrained foundation models is important for achieving generalization and scalability. To this end, I have explored <strong>VLM-based VLA models [5,6,8,10]</strong>  as well as <strong>video-model-based generalist policies [7,9,11]</strong>. Prior to these works, I also conducted research on reinforcement learning [1,2,3,4].
+                My research focuses on <strong>training embodied foundation models</strong> that can perform a wide range of tasks in the physical world. I believe that building on top of pretrained foundation models is important for achieving generalization and scalability. To this end, I have explored <strong>VLM-based VLA models [5,6,8,10,11,13]</strong>  as well as <strong>video-model-based generalist policies [7,9,12]</strong>. Prior to these works, I also conducted research on reinforcement learning [1,2,3,4].
 
                 <!-- My research focuses on <strong>Embodied AI and Generative Models</strong>, with a particular emphasis on <strong>training robot foundation models</strong> capable of performing a wide range of tasks in physical world. I prefer simple and scalable methods :) -->
                 
@@ -105,13 +106,14 @@
       </td>
       <td style="padding:10px;width:65%;vertical-align:top">
         <a href="https://ctrl-world.github.io/">
-          <span class="papertitle">[11] Ctrl-World: A Controllable Generative World Model for Robot Manipulation</span>
+          <span class="papertitle">[12] Ctrl-World: A Controllable Generative World Model for Robot Manipulation</span>
         </a>
         <br>
         <strong>Yanjiang Guo*</strong>, Lucy Xiaoyang Shi*, Jianyu Chen, Chelsea Finn
 
         <br>
-        <em><strong>Arxiv</strong>, 2025</em>
+        <!-- International Conference on Learning Representations (ICLR), 2026 -->
+        <em>International Conference on Learning Representations <strong>(ICLR)</strong>, 2026</em>
         
         <br>
         <a href="https://ctrl-world.github.io/">project page</a>
@@ -232,6 +234,97 @@
     <h3><span class="highlight">Vison-Language-Action Models:</span></h3>
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+
+    <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+      <td style="padding:10px;width:35%;vertical-align:top">
+        <div class="one" style="width: 100%;">
+          <div class="two" id='nuvo_image' style="width: 100%;"><video  width=100% muted autoplay loop>
+          <source src="images/vlm4vla.jpg">
+          Your browser does not support the video tag.
+          </video></div>
+          <!-- <video src='images/doremi_clip.mp4' type="video/mp4" width=100%></video> -->
+          <img src='images/vlm4vla.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nuvo_start() {
+            document.getElementById('nuvo_image').style.opacity = "1";
+          }
+
+          function nuvo_stop() {
+            document.getElementById('nuvo_image').style.opacity = "0";
+          }
+          nuvo_stop()
+        </script>
+      </td>
+      <td style="padding:10px;width:65%;vertical-align:top">
+        <a href="https://arxiv.org/abs/2501.18867">
+          <span class="papertitle">[13] VLM4VLA: Revisiting Vision-Language-Models in Vision-Language-Action Models</span>
+        </a>
+        <br>
+        Jianke Zhang, Xiaoyu Chen, <strong>Yanjiang Guo</strong>, Yucheng Hu, Jianyu Chen
+
+        <br>
+        <!-- <strong><em>ICML</em>, 2025</strong> -->
+        <em>International Conference on Learning Representations <strong>(ICLR)</strong>, 2026</em>
+        <br>
+        <a href="https://cladernyjorn.github.io/VLM4VLA.github.io/">project page</a>
+        /
+        <a href="https://openreview.net/forum?id=tc2UsBeODW7">arXiv</a>
+        /
+        <a href="https://github.com/CladernyJorn/VLM4VLA">code</a>
+
+        <p>
+        <!-- <span class="highlight">VLA Model.</span> -->
+        We systematically evaluate how the base VLM affect the performance of VLA.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+      <td style="padding:10px;width:35%;vertical-align:top">
+        <div class="one" style="width: 100%;">
+          <div class="two" id='nuvo_image' style="width: 100%;"><video  width=100% muted autoplay loop>
+          <source src="images/villa.jpg">
+          Your browser does not support the video tag.
+          </video></div>
+          <!-- <video src='images/doremi_clip.mp4' type="video/mp4" width=100%></video> -->
+          <img src='images/villa.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nuvo_start() {
+            document.getElementById('nuvo_image').style.opacity = "1";
+          }
+
+          function nuvo_stop() {
+            document.getElementById('nuvo_image').style.opacity = "0";
+          }
+          nuvo_stop()
+        </script>
+      </td>
+      <td style="padding:10px;width:65%;vertical-align:top">
+        <a href="https://aka.ms/villa-x">
+          <span class="papertitle">[11] Villa-x: enhancing latent action modeling in vision-language-action models</span>
+        </a>
+        <br>
+        Xiaoyu Chen*, Hangxing Wei*, Pushi Zhang*, Chuheng Zhang*, Kaixin Wang*, <strong>Yanjiang Guo</strong>, Rushuai Yang, Yucen Wang, Xinquan Xiao, Li Zhao, Jianyu Chen, Jiang Bian
+
+        <br>
+        <!-- <strong><em>ICML</em>, 2025</strong> -->
+        <em>International Conference on Learning Representations <strong>(ICLR)</strong>, 2026</em>
+        <br>
+        <a href="https://aka.ms/villa-x">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2507.23682">arXiv</a>
+        /
+        <a href="https://github.com/microsoft/villa-x">code</a>
+
+        <p>
+        <!-- <span class="highlight">VLA Model.</span> -->
+        We incoperate latent action modeling into VLA model.
+        </p>
+      </td>
+    </tr>
+
 
     <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
       <td style="padding:10px;width:35%;vertical-align:top">

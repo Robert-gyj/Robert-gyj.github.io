@@ -22,16 +22,13 @@
                 <p class="name" style="text-align: center;">
                   Yanjiang Guo
                 </p>
-                <p> Hi! I am a 4th-year PhD student major in Computer Science at <a href="https://iiis.tsinghua.edu.cn/"> Tsinghua University</a>, advised by Prof. <a href="https://people.iiis.tsinghua.edu.cn/~jychen/">Jianyu Chen</a>.
+                <p> Hi! I am a 4th-year PhD student in Computer Science at <a href="https://iiis.tsinghua.edu.cn/"> Tsinghua University</a>, advised by Prof. <a href="https://people.iiis.tsinghua.edu.cn/~jychen/">Jianyu Chen</a>.
                 I received my bachelor's degree in EE also from<a href="https://www.ee.tsinghua.edu.cn/"> Tsinghua University</a> in 2022 .
                 From March 2025 to Jan. 2026, I was fortunate to visit <a href="https://irislab.stanford.edu/">Stanford University</a> and work with Prof. <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a> (Founder of <a href="https://www.physicalintelligence.company/">Physical Intelligence</a>).
                 <p> 
-                My research focuses on <strong>training embodied foundation models</strong> that can perform a wide range of tasks in the physical world. I believe that building on top of pretrained foundation models is important for achieving generalization and scalability. 
+                My research focuses on <strong>training embodied foundation models</strong> that can perform a wide range of tasks in the physical world. I believe that building on top of pretrained foundation models is important for achieving generalization and scalability. To this end, I have explored <strong>VLM-based VLA models</strong> [5,6,8,10,11,13,14,15] and <strong>Video-model-based policy</strong> [7,9,12]. Previously, I also do research on LLM agent and RL [1,2,3,4,16].
                 
-                
-                To this end, I have explored <strong>VLM-based VLA models</strong> and <strong>Video-model-based policy</strong>. Previously, I also do research on LLM agent and RL.
-                
-                <p>Besides research, I enjoy playing soccer ⚽. I also love physics 👾 —the simplicity and elegance of physics law strongly appeal to me. </p>
+                <p>Besides research, I enjoy playing soccer ⚽. I also love physics 📐—the simplicity and elegance of physics law strongly appeal to me. </p>
 
                 
              
@@ -74,18 +71,10 @@
 
 
 
-    <h2>Selected Research <span class="section-note">(* indicates equal contribution)</span></h2>
-
-    <div class="publication-filter" role="tablist" aria-label="Publication categories">
-      <button class="publication-filter-btn active" type="button" data-target="video-world-model" aria-selected="true">Video World Model</button>
-      <button class="publication-filter-btn" type="button" data-target="vla" aria-selected="false">Vision-Language-Action Model</button>
-      <button class="publication-filter-btn" type="button" data-target="llm-agent" aria-selected="false">LLM agent, RL</button>
-    </div>
-
-    <div class="publication-panel active" data-category="video-world-model">
+    <h2>Selected Research (* indicates equal contribution)</h2>
 
           
-    <!-- <h3><span class="highlight"> Video World Models:</span></h3> -->
+    <h3><span class="highlight"> Video World Models:</span></h3>
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
@@ -281,11 +270,7 @@
 
     </tbody></table>
 
-    </div>
-
-    <div class="publication-panel" data-category="vla">
-
-    <!-- <h3><span class="highlight">Vison-Language-Action Models:</span></h3> -->
+    <h3><span class="highlight">Vison-Language-Action Models:</span></h3>
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
 
@@ -560,12 +545,8 @@
 
     </tbody></table>
 
-  </div>
 
-  <div class="publication-panel" data-category="llm-agent">
-
-
-    <!-- <h3><span class="highlight">LLM Agent, Reinforcement Learning:</span></h3> -->
+    <h3><span class="highlight">LLM Agent, Reinforcement Learning:</span></h3>
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
 
     <tr onmouseout="bog_stop()" onmouseover="bog_start()">
@@ -697,9 +678,7 @@
 
     </tbody></table>
 
-  </div>
-
-          <!-- <p></p>
+          <p></p>
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
@@ -726,7 +705,7 @@
                 </p>
               </td>
             </tr>
-          </tbody></table> -->
+          </tbody></table>
 
           <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
@@ -754,32 +733,5 @@
         </td>
       </tr>
     </table>
-
-    <script type="text/javascript">
-      (function () {
-        var filterButtons = document.querySelectorAll('.publication-filter-btn');
-        var panels = document.querySelectorAll('.publication-panel');
-
-        function showCategory(target) {
-          panels.forEach(function (panel) {
-            panel.classList.toggle('active', panel.getAttribute('data-category') === target);
-          });
-
-          filterButtons.forEach(function (button) {
-            var isActive = button.getAttribute('data-target') === target;
-            button.classList.toggle('active', isActive);
-            button.setAttribute('aria-selected', String(isActive));
-          });
-        }
-
-        filterButtons.forEach(function (button) {
-          button.addEventListener('click', function () {
-            showCategory(button.getAttribute('data-target'));
-          });
-        });
-
-        showCategory('video-world-model');
-      })();
-    </script>
   </body>
 </html>

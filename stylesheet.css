@@ -96,6 +96,11 @@ h2 {
   font-size: 22px;
 }
 
+.section-note {
+  font-size: 13px;
+  color: #666666;
+}
+
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
@@ -132,4 +137,43 @@ h2 {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+.publication-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+
+.publication-filter-btn {
+  border: 1px solid #c8d2df;
+  background: #f4f7fb;
+  color: #27435f;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.publication-filter-btn:hover {
+  background: #e8eef6;
+  border-color: #9cb2cb;
+}
+
+.publication-filter-btn.active {
+  background: #1772d0;
+  border-color: #1772d0;
+  color: #ffffff;
+}
+
+.publication-panel {
+  display: none;
+}
+
+.publication-panel.active {
+  display: block;
 }

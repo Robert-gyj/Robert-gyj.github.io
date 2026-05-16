@@ -22,14 +22,14 @@
                 <p class="name" style="text-align: center;">
                   Yanjiang Guo
                 </p>
-                <p> Hi! I am a 4th-year PhD student major in Computer Science at <a href="https://iiis.tsinghua.edu.cn/"> Tsinghua University</a>, advised by Prof. <a href="https://people.iiis.tsinghua.edu.cn/~jychen/">Jianyu Chen</a>.
+                <p> Hi! I am a fourth-year PhD student in Computer Science at <a href="https://iiis.tsinghua.edu.cn/"> Tsinghua University</a>, advised by Prof. <a href="https://cjy1992.github.io/">Jianyu Chen</a>.
                 I received my bachelor's degree in EE also from<a href="https://www.ee.tsinghua.edu.cn/"> Tsinghua University</a> in 2022 .
                 From March 2025 to Jan. 2026, I was fortunate to visit <a href="https://irislab.stanford.edu/">Stanford University</a> and work with Prof. <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a> (Founder of <a href="https://www.physicalintelligence.company/">Physical Intelligence</a>).
                 <p> 
                 My research focuses on <strong>training embodied foundation models</strong> that can perform a wide range of tasks in the physical world. I believe that building on top of pretrained foundation models is important for achieving generalization and scalability. 
                 
                 
-                To this end, I have explored <strong>VLM-based VLA models</strong> and <strong>Video-model-based policy</strong>. Previously, I also do research on LLM agent and RL.
+                To this end, I have explored <strong>VLM-based VLA Policy</strong> and <strong>Video-model-based Policy</strong>. Previously, I also do research on LLM agent and RL.
                 
                 <p>Besides research, I enjoy playing soccer ⚽. I also love physics 👾 —the simplicity and elegance of physics law strongly appeal to me. </p>
 
@@ -79,7 +79,7 @@
     <div class="publication-filter" role="tablist" aria-label="Publication categories">
       <button class="publication-filter-btn active" type="button" data-target="video-world-model" aria-selected="true">Video World Model</button>
       <button class="publication-filter-btn" type="button" data-target="vla" aria-selected="false">Vision-Language-Action Model</button>
-      <button class="publication-filter-btn" type="button" data-target="llm-agent" aria-selected="false">LLM agent, RL</button>
+      <button class="publication-filter-btn" type="button" data-target="llm-agent" aria-selected="false">LLM Agent, RL</button>
     </div>
 
     <div class="publication-panel active" data-category="video-world-model">
@@ -209,7 +209,7 @@
         Yucheng Hu*, <strong>Yanjiang Guo*</strong>, Pengchao Wang, Xiaoyu Chen, Yen-Jen Wang, Jianke Zhang, Koushil Sreenath, Chaochao Lu, Jianyu Chen
 
         <br>
-        <em>International Conference on Machine Learning (<strong>ICML</strong>), 2025 &nbsp <font color="red"><strong>(Spotlight, 2.6%)</strong></font></em>
+        <em>International Conference on Machine Learning (<strong>ICML</strong>), 2025 &nbsp <font color="#FFB347"><strong>(Spotlight)</strong></font></em>
         <br>
         <a href="https://video-prediction-policy.github.io/">project page</a>
         /
@@ -293,6 +293,48 @@
       <td style="padding:10px;width:35%;vertical-align:top">
         <div class="one" style="width: 100%;">
           <div class="two" id='nuvo_image' style="width: 100%;"><video  width=100% muted autoplay loop>
+          <source src="images/unijepa.png">
+          Your browser does not support the video tag.
+          </video></div>
+          <!-- <video src='images/doremi_clip.mp4' type="video/mp4" width=100%></video> -->
+          <img src='images/unijepa.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nuvo_start() {
+            document.getElementById('nuvo_image').style.opacity = "1";
+          }
+
+          function nuvo_stop() {
+            document.getElementById('nuvo_image').style.opacity = "0";
+          }
+          nuvo_stop()
+        </script>
+      </td>
+      <td style="padding:10px;width:65%;vertical-align:top">
+        <a href="https://arxiv.org/abs/2602.09849">
+          <span class="papertitle">[17] UniJEPA: Enhancing Robot Policy via Unified Continuous and Discrete
+                Representation Learning</span>
+        </a>
+        <br>
+         Jianke Zhang*, Yucheng Hu*, <strong>Yanjiang Guo</strong>, Xiaoyu Chen, Yichen Liu, Wenna Chen, Chaochao Lu, Jianyu Chen
+        <br>
+        <em>International Conference on Machine Learning (<strong>ICML</strong>), 2026</em>
+        <br>
+        <a href="https://sites.google.com/view/unijepa">project page</a>
+        /
+        <a href="https://arxiv.org/pdf/2510.10642v3">arXiv</a>
+        <!-- <a href="https://github.com/CladernyJorn/VLM4VLA">code</a> -->
+
+        <p>
+        We predict latent future states to help the robot learn better policies.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+      <td style="padding:10px;width:35%;vertical-align:top">
+        <div class="one" style="width: 100%;">
+          <div class="two" id='nuvo_image' style="width: 100%;"><video  width=100% muted autoplay loop>
           <source src="images/bagelvla.jpg">
           Your browser does not support the video tag.
           </video></div>
@@ -326,7 +368,7 @@
 
         <p>
         <!-- <span class="highlight">VLA Model.</span> -->
-        We systematically evaluate how the base VLM affect the performance of VLA.
+        We build a unified VLA model based on the Bagel model with unified understanding and generation capabilities.
         </p>
       </td>
     </tr>
@@ -677,7 +719,7 @@
         <br>
         Xinyang Gu*, Yen-Jen Wang*, Xiang Zhu*, Chengming Shi*, <strong>Yanjiang Guo</strong>, Yichen Liu, Jianyu Chen
         <br>
-        <em>Robotics: Science and Systems (<strong>RSS</strong>), 2024 &nbsp <font color="red"><strong>(Best Paper Award Finalists)</strong></font></em>
+        <em>Robotics: Science and Systems (<strong>RSS</strong>), 2024 &nbsp <font color="#FFB347"><strong>(Best Paper Award Finalists)</strong></font></em>
         <br>
         <a href="https://sites.google.com/view/humanoid-gym/">project page</a>
         /
